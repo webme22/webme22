@@ -1,0 +1,4 @@
+Dear <?=$user_name?>,
+You are now an assistant in , <?=strtoupper($family_name)?> FAMILY , please click on the below button to complete registration .
+Regards.
+<?=$url?>

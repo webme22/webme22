@@ -1,0 +1,4 @@
+Dear <?=$userName?>,
+New request to join your family from  : <?=$name?> .
+Please login on <?=$login_url?> and go to your account to accept or reject.
+Regards.

@@ -1,0 +1,10 @@
+Dear <?=$user_name?>,
+Today your family has, .
+<?=$report['access_requests'] ?> Access request 
+<?=$report['join_requests'] ?> Join request 
+<?=$report['invitations'] ?> Invitation 
+<?=$report['media'] ?> Added Media 
+<?=$report['added_members'] ?> Members only 
+<?=$report['added_assistants'] ?> Assistants only 
+<?=$report['added_assistants_and_members'] ?> Assistants and Members 
+Regards.

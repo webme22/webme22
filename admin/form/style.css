@@ -1,0 +1,303 @@
+/*comapny popup*/
+
+
+#school_popup h1, #school_popup blockquote.big-bold, #school_popup .h1, #school_popup blockquote.big, #school_popup #neue .title.darkunderline,#school_popup #neue .allfeatures .title, #school_popup #resources-research dl.data dt, #school_popup #about-brand-assets .get-everything {
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-transform:  capitalize;
+}
+
+#school_popup b{
+    margin-left: 5px;
+    color: red;
+    text-transform:  capitalize;
+}
+
+
+#school_popup .thin {
+    font-weight: 200;
+    text-shadow: none;
+}
+#school_popup .thin strong {
+    font-weight: 500;
+}
+
+#school_popup .btn,#school_popup2 .btn,#school_popup3 .btn,#school_popup4 .btn,#school_popup5 .btn, #school_popup5 input.button[type="submit"] , #school_popup input.button[type="button"],#school_popup2 input.button[type="button"],#school_popup3 input.button[type="button"],#school_popup4 input.button[type="button"],#school_popup5 input.button[type="button"]{
+    -moz-transition: opacity 0.2s ease 0s;
+    background-color: #2D2D24;
+    background-repeat: repeat-y;
+    border-radius: 7px 7px 7px 7px;
+    color: white !important;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin: 0 0 15px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#school_popup input.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(255, 255, 255, 0.5) -moz-use-text-color -moz-use-text-color;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    width: 130px;
+}
+
+
+#school_popup input.btn{
+   background-color: #D93E2A;
+    background-repeat: repeat-y;
+    border: 1px solid #5E5E5E;
+    
+}
+
+
+#school_popup form .line{
+    margin-top: 15px;
+}
+
+
+
+#school_popup label ,#school_popup2 label,#school_popup3 label,#school_popup4 label,#school_popup5 label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#school_popup form input[type="submit"] , #school_popup  form input[type="button"]{
+    cursor: pointer;
+}
+#school_popup form input[type="text"], form input[type="email"], form input[type="password"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC #DDDDDD #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 1px solid #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #65645A;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+#school_popup form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus {
+    border: 1px solid #CCCCCC;
+}
+#school_popup form input.big[type="text"], form input.big[type="email"], form input.big[type="password"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #DDDDDD -moz-use-text-color #FFFFFF;
+    border-left: 0 none;
+    border-radius: 7px 7px 7px 7px;
+    border-right: 0 none;
+    border-style: solid none;
+    border-width: 1px 0;
+    color: #65645A;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 12px 0;
+}
+#school_popup form input.med[type="text"], form input.med[type="email"], form input.med[type="password"] {
+    font-family: "Monaco",monospace;
+    padding: 10px;
+}
+#school_popup form input.valid[type="text"], form input.valid[type="email"], form input.valid[type="password"] {
+    background: url("http://static.mailchimp.com/www/images/form-sprites.png") no-repeat scroll 95% 15px white;
+}
+#school_popup form input.invalid[type="text"], form input.invalid[type="email"], form input.invalid[type="password"] {
+    background: url("http://static.mailchimp.com/www/images/form-sprites.png") no-repeat scroll 95% -77px white;
+}
+#school_popup form input.two-column[type="text"], form input.two-column[type="email"], form input.two-column[type="password"] {
+    padding-left: 16px;
+    width: 430px;
+}
+#school_popup form input.two-column.in-inset[type="text"], form input.two-column.in-inset[type="email"], form input.two-column.in-inset[type="password"] {
+    width: 404px;
+}
+#school_popup form input.one-column[type="text"], form input.one-column[type="email"], form input.one-column[type="password"] {
+    padding-left: 16px;
+    width: 190px;
+}
+#school_popup  textarea ,#school_popup2  textarea ,#school_popup3  textarea,#school_popup4  textarea,#school_popup5  textarea {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC #DDDDDD #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 1px solid #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #65645A;
+    font-weight: 700;
+    padding: 5px 10px;
+  
+}
+#school_popup  textarea:focus ,#school_popup2  textarea:focus,#school_popup3  textarea:focus,#school_popup4  textarea:focus,#school_popup5  textarea:focus {
+    border: 1px solid #CCCCCC;
+}
+#school_popup  select ,#school_popup2  select,#school_popup3  select,#school_popup4  select{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    border-color: #CCCCCC -moz-use-text-color #FFFFFF;
+    border-left: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 0 none;
+    border-style: solid none;
+    border-width: 1px 0;
+    color: #65645A;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+#school_popup #errors {
+    background: none repeat scroll 0 0 #F2BDB9;
+    border-radius: 5px 5px 5px 5px;
+    color: #A9422E;
+    margin: 20px 0;
+}
+#school_popup #errors h2 {
+    margin-top: 0;
+    text-shadow: none;
+}
+#school_popup #errors ul {
+    list-style: disc outside none;
+    margin-left: 20px;
+}
+#school_popup #errors div {
+    padding: 15px;
+}
+#school_popup #iField0 {
+    letter-spacing: 1.5px;
+}
+#school_popup .field-wrap.two-column input{
+    width: 630px;
+}
+#school_popup2 .field-wrap.two-column input[type='text'] ,#school_popup3 .field-wrap.two-column input[type='text'] ,#school_popup4 .field-wrap.two-column input[type='text'] {
+    width: 630px;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC #DDDDDD #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 1px solid #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    color: #65645A;
+    font-weight: 300;
+    padding: 5px 10px;
+    margin-top: 3px;
+}
+
+
+#school_popup .field-wrap.two-column{
+    width: 200px;
+}
+#school_popup .field-help {
+    width: 608px;
+}
+#school_popup .field-wrap input {
+    float: none;
+}
+#school_popup .field-help {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    clear: both;
+    display: block;
+    margin: -4px 4px 0 0;
+    padding: 15px 10px 10px;
+}
+#school_popup .field-help .btn, .field-help .chatwithus, .field-help .chatwithus2, .field-help .emailus, .field-help #neue .nav-pills .to-top, #neue .nav-pills .field-help .to-top, .field-help #webinars-embedded-signup input.button[type="submit"], #webinars-embedded-signup .field-help input.button[type="submit"], .field-help #why-mailchimp .main a.grey-button, #why-mailchimp .main .field-help a.grey-button, .field-help #why-mailchimp .main a.red-button, #why-mailchimp .main .field-help a.red-button {
+    font-size: 12px;
+    margin: 2px 0 0;
+    padding: 4px 10px;
+    text-indent: 0;
+}
+#school_popup #strong-pass {
+    display: block;
+    float: left;
+    padding-top: 5px;
+}
+#school_popup .popup a {
+    text-decoration: underline;
+}
+#school_popup .field-help {
+    color: #3F3F38;
+    padding: 10px 11px;
+}
+#school_popup .field-help.success {
+    background: none repeat scroll 0 0 #C9E6DE;
+    color: #4A8074;
+}
+#school_popup .field-help.error {
+    background: none repeat scroll 0 0 #F2BDB9;
+    color: #A9422E;
+}
+
+/*
+body {
+    background: url("http://static.mailchimp.com/www/images/noisepattern.png") repeat scroll 0 0 #EEEEEE;
+    color: #3F3F38;
+    font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    font-stretch: normal;
+}*/
+
+#school_popup {
+    color: #3F3F38;
+    font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    font-stretch: normal;
+    
+}
+#school_popup .content {
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    width: 760px;
+    z-index: 10;
+    
+}
+
+
+#school_popup .main {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: -52px;
+    padding-bottom: 37px;
+    padding-top: 17px;
+
+    
+}
+
+

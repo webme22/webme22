@@ -1,0 +1,6 @@
+Dear <?=$user_name?>,
+There is a new member has accepted your invitation and started to add his sub tree
+Please wait some time until the whole tree is added then click on the below button to view this tree .
+<?=$url?>
+Regards.
+

@@ -1,0 +1,17 @@
+{
+  "require": {
+    "phpmailer/phpmailer": "^6.3",
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "illuminate/database": "^8.34",
+    "illuminate/pagination": "^8.34",
+    "symfony/console": "^5.2",
+    "lcobucci/jwt": "^4.1"
+  },
+  "autoload": {
+    "classmap": [
+      "Models",
+      "console/commands"
+    ]
+  }
+}

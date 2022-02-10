@@ -1,0 +1,5 @@
+Dear <?=$user_name?>,
+There is a new assistant has accepted your invitation and completed the registration process. His information are :
+ID: <?=$assistant_id?>
+Name: <?=$assistant_name?>
+Regards.

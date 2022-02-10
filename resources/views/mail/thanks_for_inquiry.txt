@@ -1,0 +1,3 @@
+Dear <?=user_name?>
+Thank you for your inquiry regarding our service, we will answer you as soon as possible .
+Regards.

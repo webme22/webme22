@@ -1,0 +1,5 @@
+Dear Admin,
+URGENT Someone just registered/upgraded/topped up plan and paid using Bank Transfer Method:
+Please note that their account won't be activated/plan won't be upgraded unless you confirm the wire transfer in the admin panel
+<?=$url?>
+Regards.

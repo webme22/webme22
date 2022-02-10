@@ -1,0 +1,5 @@
+Dear <?=user_name?>
+Congrats Your Payment has been confirmed and you can now access your account:
+Login by using the link below
+<?=$url?>
+Regards.

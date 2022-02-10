@@ -1,0 +1,30 @@
+.terms-content p {
+    font-size: 16px;
+    font-family: "Metropolis";
+    margin-bottom: 0;
+    color: #1f2b36;
+}
+.terms-content p b {
+    margin-top: 20px;
+    display: block;
+}
+
+.terms-content-ar p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #1f2b36;
+}
+.terms-content-ar p b {
+    margin-top: 20px;
+    display: block;
+}
+.terms-main-title h2 {
+    font-size: 22px;
+    color: #1f2b36;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+.terms-main-head b {
+    font-size: 22px;
+}

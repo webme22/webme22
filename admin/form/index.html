@@ -1,0 +1,832 @@
+<html>
+<head>
+<title>Student Registration</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-type">
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="jquery-ui-1.8.23.custom.css" />
+<link href="css/images/icon.png" rel="shortcut icon">
+<script charset="utf-8" type="text/javascript" src="validation.js"></script>
+<script src="jquery.js"></script>
+<script src="jquery.ui.core.js"></script>
+<script src="jquery.ui.widget.js"></script>
+
+<script src="jquery.ui.datepicker.js"></script>
+
+<script>
+$(function() {
+$( ".input" ).datepicker();
+});	
+</script>
+</head>
+<body>
+<!--  add company popup --> 
+<div id="screen_reg_school">
+
+<div id="school_popup">
+<br /><br /><br /><br />
+      <div class="content main"> 
+        <div class="line top0"> 
+          <div class="unit size1of2"> 
+            <div class="in15" style="margin-left: 50px;" id="school_popup1"> 
+            
+              <div style="margin-left: -30px;" id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0%;"><font color="green" id="progress_num">0%</font></div>
+              </div>
+              
+              <h2 class="h1">Get Started With A <font color="red">School</font> Registration</h2>
+              <b>First Required field</b>
+              
+              
+              
+              <form role="form" name="form" method="post" id="form" action="submit.php" enctype="multipart/form-data"> 
+                              
+              
+                <div class="line"> 
+                  <label for="Title">School Name  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="schoolName" id="schoolName" class="required med " onkeydown="remove_error('schoolName')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('schoolName')">
+                  <div id="schoolName_def" class="field-help context" style="display: none;">Write the school Name</div>
+                  <div id="schoolName_suc" class="field-help success" style="display: none;"></div><div id="schoolName_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+              
+             
+                
+                <div class="line" style="position: relative; width: 300px; float: left;"  > 
+                  <label for="cat">School Type<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <select name="selectSchoolType"  id="selectSchoolType" style="width:300px"  onkeydown="remove_error('selectSchoolType')" onchange="remove_error('selectSchoolType')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('selectSchoolType')" >
+                   <option value="">choose</option>
+                   <option value='ps'>Primary School</option>
+                  </select>
+                  <div id="selectSchoolType_def" class="field-help context" style="display: none;width: 278px;">Choose The School Type</div>
+                  
+                  <div id="selectSchoolType_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="selectSchoolType_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+               <div class="line" style="position: relative; float: right; margin-right: 170px;"> 
+                  <label for="subcat">Class Year <label style="color: red;">*</label></label>
+                  
+                 <div class="field-wrap two-column">
+                  <select name="selectClassYear"  id="selectClassYear" style="width:300px"  onkeydown="remove_error('selectClassYear')" onchange="remove_error('selectClassYear')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('selectClassYear')" >
+                   <option value="">choose</option>
+                   <option value='1'>1</option>
+                  </select>
+                  <div id="selectClassYear_def" class="field-help context" style="display: none;width: 278px;">Choose The Class Year</div>
+                  
+                  <div id="selectClassYear_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="selectClassYear_error" class="field-help error" style="display: none;width:278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+                
+               
+                <div class="line" style="position: relative;margin-top: 100px;"> 
+                  <label for="website">Bus </label>
+                  
+                  <div class="field-wrap two-column">
+                    <table>
+                     <tr>
+                      <td>Yes</td> <td><input type="radio" name="bus" value="1" style="width: 5px;margin-right:20px ;" /></td>
+                      <td>No</td> <td><input type="radio" name="bus" value="0" style="width: 5px;" /></td>
+                     </tr>
+                    </table>
+                     
+                  </div>
+                </div> 
+                
+                
+              
+            
+                
+                
+                <div class="line"> 
+                  <div class="unit size1of2"> 
+                    <div class="right15"> 
+                      <input type="button" value="Next" name="next1" class="orange btn" onclick="validation(2)"  > 
+                      
+                      <input type="button" value="Cancel" name="Cancel" style="position: absolute; margin-top: -67px; margin-left: 150px;" class="orange btn" onclick="document.getElementById('company_popup').style.display='none'"  >
+                    </div> 
+                  </div> 
+                </div> 
+               <br />
+            
+            </div> 
+            
+            <!-- /////////////////////// -->
+            
+             <div class="in15" style="margin-left: 50px;display: none;" id="school_popup2"> 
+            
+            
+              <div style="margin-left: -30px;" id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 30%;"><font color="green" id="progress_num">30%</font></div>
+              </div>
+              
+              <h2 class="h1">Get Started With A <font color="red">Student</font> Registration</h2>
+              <b>First Required field</b>
+              
+              <table cellpadding="10" cellspacing="10">
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Email  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="email" id="email" class="required med " onkeydown="remove_error('email')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('email')">
+                  <div id="email_def" class="field-help context" style="display: none;">Write Email</div>
+                  <div id="email_suc" class="field-help success" style="display: none;"></div><div id="email_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              
+              <tr>
+              
+              <td width="300px">
+                <div class="line"   > 
+                  <label for="cat">First Name<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="firstName"  id="firstName" style="width:300px"  onkeydown="remove_error('firstName')" onchange="remove_error('firstName')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('firstName')" />
+                  
+                  <div id="firstName_def" class="field-help context" style="display: none;width: 278px;">write first name</div>
+                  
+                  <div id="firstName_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="firstName_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+                <div class="line"   > 
+                  <label for="cat">Second Name<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="secondName"  id="secondName" style="width:300px"  onkeydown="remove_error('secondName')" onchange="remove_error('firstName')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('secondName')" />
+                  
+                  <div id="secondName_def" class="field-help context" style="display: none;width: 278px;">write second name</div>
+                  
+                  <div id="secondName_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="secondName_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+                
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line"  > 
+                  <label for="cat">Last Name<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="lName"  id="lName" style="width:300px"  onkeydown="remove_error('secondName')" onchange="remove_error('lName')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('lName')" />
+                  
+                  <div id="lName_def" class="field-help context" style="display: none;width: 278px;">write last name</div>
+                  
+                  <div id="lName_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="lName_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+               <div class="line"   > 
+                  <label for="cat">Birth Date<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="birthD" class="input"  id="birthD" style="width:300px"  onkeydown="remove_error('birthD')" onchange="remove_error('birthD')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('birthD')" />
+                  
+                  <div id="birthD_def" class="field-help context" style="display: none;width: 278px;">write Birth Date</div>
+                  
+                  <div id="birthD_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="birthD_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              
+              </td>
+              
+              
+              </tr>
+              
+            <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line" > 
+                  <label for="Title" >Address  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <textarea cols="76"   name="address" id="address" class="required med " onkeydown="remove_error('address')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('address')"> </textarea>
+                  <div id="address_def" class="field-help context" style="display: none;">Write Address</div>
+                  <div id="address_suc" class="field-help success" style="display: none;"></div><div id="address_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+              </td>
+              
+              <!---------->
+              
+              <td>
+               
+              
+              </td>
+              
+              
+              </tr>
+              
+              
+               <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               
+               <div class="line"   > 
+                  <label for="cat">Home Phone<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="homePhone"  id="homePhone" style="width:300px"  onkeydown="remove_error('firstName')" onchange="remove_error('homePhone')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('homePhone')" />
+                  
+                  <div id="homePhone_def" class="field-help context" style="display: none;width: 278px;">write home phone</div>
+                  
+                  <div id="homePhone_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="homePhone_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+              </td>
+              
+              <!---------->
+              
+              <td>
+                <div class="line"  > 
+                  <label for="cat">Mobile Name<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="mobPhone"  id="mobPhone" style="width:300px"  onkeydown="remove_error('mobPhone')" onchange="remove_error('mobPhone')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('mobPhone')" />
+                  
+                  <div id="mobPhone_def" class="field-help context" style="display: none;width: 278px;">write mobile phone</div>
+                  
+                  <div id="mobPhone_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="mobPhone_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              
+              </tr>
+              
+              
+              
+               <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+              
+                <div class="line" > 
+                  <label for="Title">Personal Photo </label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file"   name="pPic" id="pPic" class="required med " style="width: 300px;"_/>
+                 
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+            
+                <div class="line" > 
+                  <label for="Title">DirthDate Certificate Photo </label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file"   name="BDCP" id="BDCP" class="required med " style="width: 300px;" />
+                 
+                  </div>
+                </div>
+              </td>
+              
+              
+              </tr>
+              
+              
+              
+              
+              </table>
+
+   
+                
+                <div class="line"> 
+                  <div class="unit size1of2"> 
+                    <div class="right15"> 
+                      <input type="button" value="Next" name="next2" class="orange btn" onclick="validation_2(3)" > 
+                      
+                      <input type="button" value="Cancel" name="Cancel" style="position: absolute; margin-top: -67px; margin-left: 150px;" class="orange btn" onclick="document.getElementById('company_popup').style.display='none'"  >
+                    </div> 
+                  </div> 
+                </div> 
+               <br />
+             
+            </div>
+            <!-- /////////////////////// -->
+            
+            
+            
+            <div class="in15" style="margin-left: 50px;display: none;" id="school_popup3"> 
+            
+            
+              <div style="margin-left: -30px;" id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 60%;"><font color="green" id="progress_num">60%</font></div>
+              </div>
+              
+              <h2 class="h1">Get Started With A <font color="red">Father</font> Registration</h2>
+              <b>First Required field</b>
+              
+              <table cellpadding="10" cellspacing="10">
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Full Name  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="fatherName" id="fatherName" class="required med " onkeydown="remove_error('fatherName')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherName')">
+                  <div id="fatherName_def" class="field-help context" style="display: none;">Write Full name</div>
+                  <div id="fatherName_suc" class="field-help success" style="display: none;"></div><div id="fatherName_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+              </td>
+              
+              
+              </tr>
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Email  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="fatherEmail" id="fatherEmail" class="required med " onkeydown="remove_error('fatherEmail')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherEmail')">
+                  <div id="fatherEmail_def" class="field-help context" style="display: none;">Write Email</div>
+                  <div id="fatherEmail_suc" class="field-help success" style="display: none;"></div><div id="fatherEmail_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              
+              <tr>
+              
+              <td width="300px">
+                <div class="line"   > 
+                  <label for="cat">Job Title<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  
+                  <select name="fatherJob"  id="fatherJob" style="width:300px;height:30px"  onkeydown="remove_error('fatherJob')" onchange="remove_error('fatherJob')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherJob')">
+                  <option value="">choose</option>
+                  <option value="worker">worker</option>
+                  </select>
+                  <div id="fatherJob_def" class="field-help context" style="display: none;width: 278px;">write father's job</div>
+                  
+                  <div id="fatherJob_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="fatherJob_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+                <div class="line"   > 
+                  <label for="cat">Mobile Number<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="fatherMobNum"  id="fatherMobNum" style="width:300px"  onkeydown="remove_error('fatherMobNum')" onchange="remove_error('fatherMobNum')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherMobNum')" />
+                  
+                  <div id="fatherMobNum_def" class="field-help context" style="display: none;width: 278px;">write mobile number</div>
+                  
+                  <div id="fatherMobNum_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="fatherMobNum_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+                
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line"  > 
+                  <label for="cat">Certificate <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="fatherCertf"  id="fatherCertf" style="width:300px"  onkeydown="remove_error('fatherCertf')" onchange="remove_error('fatherCertf')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherCertf')" />
+                  
+                  <div id="fatherCertf_def" class="field-help context" style="display: none;width: 278px;">write certificates</div>
+                  
+                  <div id="fatherCertf_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="fatherCertf_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+               <div class="line"   > 
+                  <label for="cat">Certificate Photo<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file" name="fatherCertfP"  id="faterCertfP" style="width:300px"  onkeydown="remove_error('faterCertfP')" onchange="remove_error('faterCertfP')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('faterCertfP')" />
+                  
+                  <div id="faterCertfP_def" class="field-help context" style="display: none;width: 185px;">upload certificate photo</div>
+                  
+                  <div id="faterCertfP_suc" class="field-help success" style="display: none;width: 185px;"></div><div id="faterCertfP_error" class="field-help error" style="display: none;width: 185px;">* complete this field</div>
+                
+                  </div>
+                </div>
+              
+              </td>
+              
+              
+              </tr>
+              
+            <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line"  > 
+                  <label for="cat">Card ID Number <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="fatherCardNum"  id="fatherCardNum" style="width:300px"  onkeydown="remove_error('fatherCardNum')" onchange="remove_error('fatherCardNum')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherCardNum')" />
+                  
+                  <div id="fatherCardNum_def" class="field-help context" style="display: none;width: 278px;">write international card number</div>
+                  
+                  <div id="fatherCardNum_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="fatherCardNum_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+               <div class="line"   > 
+                  <label for="cat">card Photo<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file" name="fatherCardP"  id="fatherCardP" style="width:300px"  onkeydown="remove_error('fatherCardP')" onchange="remove_error('fatherCardP')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('fatherCardP')" />
+                  
+                  <div id="fatherCardP_def" class="field-help context" style="display: none;width: 185px;">upload certificate photo</div>
+                  
+                  <div id="fatherCardP_suc" class="field-help success" style="display: none;width: 185px;"></div><div id="fatherCardP_error" class="field-help error" style="display: none;width: 185px;">* complete this field</div>
+                
+                  </div>
+                </div>
+              
+              </td>
+              
+              
+              </tr>
+              
+              
+              
+              </table>
+                <div class="line"> 
+                  <div class="unit size1of2"> 
+                    <div class="right15"> 
+                      <!--<input type="button" value="Submit" name="submit_company_values" class="orange btn" onclick="valid_captcha()" > -->
+                       <input type="button" value="Next" name="next3" class="orange btn" onclick="validation_3(4)" > 
+                      
+                      <input type="button" value="Cancel" name="Cancel" style="position: absolute; margin-top: -67px; margin-left: 150px;" class="orange btn" onclick="document.getElementById('company_popup').style.display='none'"  >
+                    </div> 
+                  </div> 
+                </div> 
+                
+               </div> 
+                 <!-- /////////////////////// -->
+            
+            
+            
+            <div class="in15" style="margin-left: 50px;display: none;" id="school_popup4"> 
+            
+            
+              <div style="margin-left: -30px;" id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 80%;"><font color="green" id="progress_num">80%</font></div>
+              </div>
+              
+              <h2 class="h1">Get Started With A <font color="red">Mother</font> Registration</h2>
+              <b>First Required field</b>
+              
+              <table cellpadding="10" cellspacing="10">
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Full Name  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="motherName" id="motherName" class="required med " onkeydown="remove_error('motherName')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherName')">
+                  <div id="motherName_def" class="field-help context" style="display: none;">Write Full name</div>
+                  <div id="motherName_suc" class="field-help success" style="display: none;"></div><div id="motherName_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+              </td>
+              
+              
+              </tr>
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Email  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" value="" name="motherEmail" id="motherEmail" class="required med " onkeydown="remove_error('motherEmail')" onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherEmail')">
+                  <div id="motherEmail_def" class="field-help context" style="display: none;">Write Email</div>
+                  <div id="motherEmail_suc" class="field-help success" style="display: none;"></div><div id="motherEmail_error" class="field-help error" style="display: none;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              
+              <tr>
+              
+              <td width="300px">
+                <div class="line"   > 
+                  <label for="cat">Job Title<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  
+                  <select name="motherJob"  id="motherJob" style="width:300px;height:30px"  onkeydown="remove_error('motherJob')" onchange="remove_error('motherJob')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherJob')">
+                  <option value="">choose</option>
+                  <option value="worker">worker</option>
+                  </select>
+                  <div id="motherJob_def" class="field-help context" style="display: none;width: 278px;">write father's job</div>
+                  
+                  <div id="motherJob_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherJob_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div> 
+                
+              </td>
+              
+              <!---------->
+              
+              <td>
+              
+                <div class="line"   > 
+                  <label for="cat">Mobile Number<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="motherMobNum"  id="motherMobNum" style="width:300px"  onkeydown="remove_error('motherMobNum')" onchange="remove_error('motherMobNum')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherMobNum')" />
+                  
+                  <div id="motherMobNum_def" class="field-help context" style="display: none;width: 278px;">write mobile number</div>
+                  
+                  <div id="motherMobNum_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherMobNum_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+                
+              </td>
+              
+              
+              </tr>
+              
+              <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line"  > 
+                  <label for="cat">Certificate <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="mothercertf"  id="motherCertf" style="width:300px"  onkeydown="remove_error('motherCertf')" onchange="remove_error('motherCertf')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherCertf')" />
+                  
+                  <div id="motherCertf_def" class="field-help context" style="display: none;width: 278px;">write certificates</div>
+                  
+                  <div id="motherCertf_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherCertf_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+               <div class="line"   > 
+                  <label for="cat">Certificate Photo<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file" name="motherCertfP"  id="motherCertfP" style="width:300px"  onkeydown="remove_error('motherCertfP')" onchange="remove_error('motherCertfP')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherCertfP')" />
+                  
+                  <div id="motherCertfP_def" class="field-help context" style="display: none;width: 278px;">upload certificate photo</div>
+                  
+                  <div id="motherCertfP_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherCertfP_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              
+              </td>
+              
+              
+              </tr>
+              
+            <!-- ========== -->
+              <tr>
+              
+              <td width="300px">
+               <div class="line"  > 
+                  <label for="cat">Card ID Number <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="text" name="motherCardNum"  id="motherCardNum" style="width:300px"  onkeydown="remove_error('motherCardNum')" onchange="remove_error('motherCardNum')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherCardNum')" />
+                  
+                  <div id="motherCardNum_def" class="field-help context" style="display: none;width: 278px;">write international card number</div>
+                  
+                  <div id="motherCardNum_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherCardNum_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              </td>
+              
+              <!---------->
+              
+              <td>
+               <div class="line"   > 
+                  <label for="cat">card Photo<label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  <input type="file" name="motherCardP"  id="motherCardP" style="width:300px"  onkeydown="remove_error('motherCardP')" onchange="remove_error('motherCardP')"  onblur="reg_def_blur()" onfocus="reg_def_onfocus('motherCardP')" />
+                  
+                  <div id="motherCardP_def" class="field-help context" style="display: none;width: 278px;">upload certificate photo</div>
+                  
+                  <div id="motherCardP_suc" class="field-help success" style="display: none;width: 278px;"></div><div id="motherCardP_error" class="field-help error" style="display: none;width: 278px;">* you must complete this field</div>
+                
+                  </div>
+                </div>
+              
+              </td>
+              
+              
+              </tr>
+              
+              
+              
+              </table>
+                <div class="line"> 
+                  <div class="unit size1of2"> 
+                    <div class="right15"> 
+                       <input type="button" value="Next" name="next4" class="orange btn" onclick="validation_4(5)" > 
+                      
+                      <input type="button" value="Cancel" name="Cancel" style="position: absolute; margin-top: -67px; margin-left: 150px;" class="orange btn" onclick="document.getElementById('company_popup').style.display='none'"  >
+                    </div> 
+                  </div> 
+                </div> 
+                </div>
+               <!-- /////////////////////// -->
+               
+               
+<div class="in15" style="margin-left: 50px;display: none;" id="school_popup5"> 
+            
+            
+              <div style="margin-left: -30px;" id="progressbar" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 100%;"><font color="green" id="progress_num">100%</font></div>
+              </div>
+              
+              <h2 class="h1"><font color="red">END</font> of Registration</h2>
+              
+              <table cellpadding="10" cellspacing="10">
+              
+              <tr>
+              
+              <td width="300px">
+              <div class="line" > 
+                  <label for="Title">Rules Agreement  <label style="color: red;">*</label></label>
+                  
+                  <div class="field-wrap two-column">
+                  
+                  <textarea cols="76" name="rules"  readonly="true" >I Agree </textarea>
+                
+                  </div>
+                </div>
+              </td>
+              </tr>
+              <tr>
+              
+              <td width="300px">
+               <input type="radio" name="agree" onclick="document.getElementById('submitform').disabled=false" />I Agree
+              </td>
+              </tr>
+              </table>
+                
+                 <div class="line"> 
+                  <div class="unit size1of2"> 
+                    <div class="right15"> 
+                       <input type="submit" value="submit" disabled="true" name="submitform" class="orange btn"  id="submitform"> 
+                      
+                      <input type="button" value="Cancel" name="Cancel" style="position: absolute; margin-top: -67px; margin-left: 150px;" class="orange btn" onclick="document.getElementById('company_popup').style.display='none'"  >
+                    </div> 
+                  </div> 
+                </div> 
+               <br />
+              </form> 
+            </div>
+            
+            
+            
+              <!-- /////////////////////// -->
+            
+           
+          <div class="unit size1of2"> 
+            <div class="in15 ab15 top52"> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+</div>
+   
+
+   
+
+</div>
+<!-- end add company popup -->
+
+<script>RegShow('enable')  </script>
+</body>
+</html>

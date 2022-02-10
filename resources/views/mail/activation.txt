@@ -1,0 +1,5 @@
+Dear <?=$user_name?>,
+Thank you for your registration in Alhamayel Family Tree, please click on below link to activate your account:
+<?=$url?>
+Regards.
+If you have any questions please feel free to contact us at support@alhamayel.com

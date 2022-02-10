@@ -1,0 +1,256 @@
+.Sponsers {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  row-gap: 30px;
+}
+.Sponser:nth-of-type(even) {
+  transform: scale(1.09);
+  z-index: 3;
+}
+.Sponser {
+  min-width: 162px;
+  padding: 19px;
+  border-radius: 5px;
+  text-align: center;
+  background: #040f09
+    linear-gradient(
+      290deg,
+      #040f09 0%,
+      #18563d 18.81%,
+      #5fba91 35.47%,
+      #85e0b4 49.75%,
+      #5fba91 66.76%,
+      #062c1d 100%
+    )
+  0% 0% no-repeat padding-box;
+  width: 23%;
+  z-index:2;
+  font-family: 'Cairo';
+}
+
+.Sponser.Sponser--silver {
+  background: #1e2021
+    linear-gradient(
+      290deg,
+      #1e2021 7.1%,
+      #a6adb3 49.69%,
+      #64696b 71.23%,
+      #272a2b 91.33%,
+      #000 101.56%
+    );
+    font-family: 'Cairo';
+}
+
+.Sponser.Sponser--gold {
+  background: #705420
+    linear-gradient(
+      290deg,
+      #705420 0%,
+      #deca87 37.56%,
+      #523e19 92.92%,
+      #2e2312 100%
+    );
+    font-family: 'Cairo';
+}
+
+.Sponser.Sponser--platinum {
+  background: #734d52
+    linear-gradient(
+      290deg,
+      #734d52 0%,
+      #d9aba5 41.52%,
+      #7f585e 79.61%,
+      #3c1a25 100%
+    );
+  font-family: 'Cairo';
+}
+
+.Sponser__header {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Sponser__advantages {
+  list-style: none;
+  padding: 9px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.Sponser__advantages li {
+  padding-top: 8px;
+}
+
+.Sponser__advantages li:not(:last-of-type) {
+  padding-bottom: 17px;
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+
+.Sponser__advantages .bold {
+  font-weight: 600;
+}
+
+.Sponser__confirm {
+  border: 0;
+  color: #fff;
+  padding: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+          122deg,
+          #040f09 32%,
+          #18563d 59%,
+          #98e3c1 80%
+  );
+  background-color: yellow;
+  outline: 0.001px;
+}
+.Sponser__confirm span {
+  height: 40px;
+  width: 120px;
+  font-size: 12px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 9px;
+  /* background: transparent
+    linear-gradient(
+      169deg,
+      #55c392 3%,
+      #18563d 61%,
+      #040f09 87%
+    )
+    0% 0% no-repeat padding-box; */
+  background: transparent
+  linear-gradient(
+          169deg,
+          #55c392 3%,
+          #77c9a4 61%,
+          #18563d 87%
+  )
+  0% 0% no-repeat padding-box;
+}
+.Sponser.Sponser--silver .Sponser__confirm {
+  background: transparent
+  linear-gradient(122deg, #1e2021 32%, #64696b 59%, #aaa 80%) 0% 0%
+  no-repeat padding-box;
+}
+
+.Sponser.Sponser--silver .Sponser__confirm span {
+  background: transparent
+  linear-gradient(169deg, #b8c0c7 2%, #333 61%, #1e2021 87%)
+  0% 0% no-repeat padding-box;
+}
+
+.Sponser.Sponser--gold .Sponser__confirm {
+  background: transparent
+  linear-gradient(122deg, #2e2312 32%, #523e19 59%, #deca87 80%) 0% 0%
+  no-repeat padding-box;
+}
+
+.Sponser.Sponser--gold .Sponser__confirm span {
+  background: transparent
+  linear-gradient(169deg, #deca87 3%, #523e19 93%, #2e2312 100%)
+  0% 0% no-repeat padding-box;
+}
+
+.Sponser.Sponser--platinum .Sponser__confirm {
+  background: transparent
+  linear-gradient(
+          122deg,
+          #3c1a25 32%,
+          #6e3e48 59%,
+          #d9aba5 80%
+  )
+  0% 0% no-repeat padding-box;
+}
+
+.Sponser.Sponser--platinum .Sponser__confirm span {
+  background: transparent
+  linear-gradient(180deg, #d9aba5 3%, #7f585e 80%, #3c1a25 100%)
+  0% 0% no-repeat padding-box;
+} 
+.Sponser__confirm:hover{
+  color: #eee;
+}
+.Sponser:before,
+.Sponser:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 172px;
+  height: 13px;
+  background: transparent
+  radial-gradient(
+          closest-side at 50% 50%,
+          #000000 0%,
+          #222222 8%,
+          #5c5c5c 22%,
+          #8d8d8d 36%,
+          #b6b6b6 50%,
+          #d6d6d6 64%,
+          #ececec 77%,
+          #fafafa 89%,
+          #f7f7f7 100%
+  )
+  0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  bottom: -7px;
+  right: -48px;
+}
+
+.Sponser:after {
+  background: transparent
+  radial-gradient(
+          closest-side at 50% 50%,
+          #000000 0%,
+          #222222 8%,
+          #5c5c5c 22%,
+          #8d8d8d 36%,
+          #b6b6b6 50%,
+          #d6d6d6 64%,
+          #ececec 77%,
+          #fafafa 89%,
+          #f7f7f7 100%
+  )
+  0% 0% no-repeat padding-box;
+  left: -48px;
+  right: unset;
+}
+@media screen and (max-width: 480px) {
+  .Sponsers{
+    display: block;
+  }
+  .Sponser--basic{
+    width: 100%;
+  }
+  .Sponser--silver{
+    width: 100%;
+    top: 2%;
+  }
+  .Sponser--gold{
+    width: 100%;
+    top: 4%;
+  }
+  .Sponser--platinum{
+    width: 100%;
+    top: 6%;
+    margin-bottom: 11%;
+  }
+  .Sponser:before, .Sponser:after{
+    display: none;
+  }
+}

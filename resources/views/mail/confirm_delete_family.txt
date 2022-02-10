@@ -1,0 +1,4 @@
+Dear <?=$user_name?>
+We notify you that your family, <?=$family_name?>, will be deleted permanently soon .
+
+Regards.

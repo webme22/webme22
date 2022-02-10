@@ -1,0 +1,199 @@
+/* Admin responsive */
+@media (max-width: 991px) {
+    .navbar.navbar-default > .container > div{
+        margin-left: auto !important;
+    }
+}
+
+/* Components */
+.table-striped > tbody > tr:nth-of-type(odd),
+.table-hover > tbody > tr:hover,
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  text-align: left;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td,
+.table > thead > tr > th,
+.table-bordered {
+  text-align: left;
+}
+.table-rep-plugin tbody th {
+  text-align: left;
+}
+
+/* Core */
+body {
+    direction: ltr;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "tahoma";
+}
+.footer {
+    text-align: right !important;
+    right: 0px;
+    left: 240px;
+}
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    float: left;
+}
+.topbar .topbar-left {
+    float: left;
+}
+.side-menu-sm + .content-page .footer {
+    right: 80px;
+}
+.navbar-right .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+}
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9 {
+    float: left;
+}
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+    float: left;
+}
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+    float: left !important;
+}
+
+/* Custom */
+.red {
+    /* color: #FFFFFF; */
+    background-color: #cb5a5e;
+}
+.dropdown-menu > li > a > img {
+    margin-right: 5px;
+}
+.dropdown-menu > li > a > i {
+    margin-right: 5px;
+}
+#cssmenu label .expand-item,
+.lg-sidebar label .expand-item {
+    margin-left: auto !important;
+}
+#cssmenu > ul > li a:after,
+.lg-sidebar > ul > li a:after,
+#cssmenu > ul > li label:after,
+.lg-sidebar > ul > li label:after {
+    left: 0;
+}
+#cssmenu ul li img,
+.lg-sidebar ul li img {
+    margin-right: 8px;
+}
+#cssmenu .has-sub > input:checked ~ ul,
+.lg-sidebar .has-sub > input:checked ~ ul {
+    padding-left: 16px;
+}
+#cssmenu .has-sub ul,
+.lg-sidebar .has-sub ul {
+    left: 0;
+}
+#cssmenu.align-right .has-sub ul {
+    right: 0;
+    left: auto;
+}
+#cssmenu .has-sub ul li a,
+.lg-sidebar .has-sub ul li a {
+    text-align: left;
+}
+
+/* Pages */
+.price-features {
+  text-align: left;
+}

@@ -1,0 +1,114 @@
+.accordion.my-accordion .card .card-header {
+    border: 0;
+    background: #f7f7f7;
+    padding: 0;
+}
+.accordion.my-accordion .card {
+    border: none;
+    border-bottom: 1px solid #1f2b36;
+    border-radius: 0;
+}
+.accordion.my-accordion .card .card-header button {
+    display: block;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1f2b36;
+}
+.accordion.my-accordion .card .card-header button:hover {
+    background: #1f2b36;
+    color: #fff;
+    text-decoration: none !important;
+}
+.accordion.my-accordion .card .card-header button:after {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 22px;
+    content: "\f106";
+    margin-top: 0;
+}
+.accordion.my-accordion .card .card-header button.collapsed:after {
+    content: "\f107";
+}
+.hwi-list {
+    list-style: none;
+    padding: 0;
+}
+.hwi-button {
+    color: #1f2b36;
+    /* background: #ccbeae; */
+    font-style: italic;
+    border-radius: 0 !important;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #1f2b36;
+    text-decoration: none !important;
+}
+.hwi-button::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 0;
+}
+.hwi-button:hover {
+    color: #fff !important;
+    background: #1f2b36;
+}
+.profile-nav-link {
+    background-color: #cd1227 !important;
+}
+.profile-nav-link.active {
+    background-color: #6d071f !important;
+}
+.qa-nav-link {
+    background-color: #204261 !important;
+}
+.qa-nav-link.active {
+    background-color: #1f2b36 !important;
+}
+#faq .card {
+    border: 0;
+}
+
+#faq .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+}
+
+#faq .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    /* text-align: left; */
+    color: #222;
+}
+
+#faq .card .card-header .btn-header-link:after {
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* float: right; */
+}
+
+#faq .card .card-header .btn-header-link.collapsed:after {
+    content: "\f107";
+}
+
+#faq .card .collapsing {
+    background: #ffe472;
+    line-height: 30px;
+}
+
+#faq .card .collapse {
+    border: 0;
+}
+#faq .card-body {
+    padding: 0;
+}
+#faq .card .collapse.show {
+    background: #fff;
+    line-height: 30px;
+    color: #222;
+}

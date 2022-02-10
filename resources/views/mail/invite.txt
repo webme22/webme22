@@ -1,0 +1,11 @@
+Dear <?=$user_name?>,
+    <?php if ($type == 'Assistant') { ?>
+    We Invite you to be our assistant to manage our family tree,
+    Please click on the below button to enter your information .
+<?php } else { ?>
+We are delighted to invite you to join our family tree,
+Please click on the below button to enter your information, then you can login and add your subtree .
+To know more: https://www.allhamayel.com/faq.php
+<?php } ?>
+Join link: <?=$url?>
+Regards. <br><br><br>

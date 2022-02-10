@@ -1,0 +1,96 @@
+.title {
+    font-size: 100px;
+    font-weight: bolder;
+    color: #cbbcad;
+}
+.sub-title,.paragraph-header {
+    font-size: 45px
+}
+p {
+    font-size: 23px;
+}
+.section-2 {
+    background: #1f2b36;
+    color: #c9cbcc;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.sub-section-2 {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 48px 150px;
+    text-align: center;
+}
+.custom-container {
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.half-section-2 {
+    text-align: justify;
+    float:left;
+    height: 360px;
+    max-height: 360px;
+    position: relative;
+}
+.half-section-2.with-margin{
+    margin-right: 24px;
+    margin-left: 24px;
+    width: 44%
+}
+.half-section-2:not(.with-margin){
+    width: 50%;
+}
+.button-container {
+    width: 100%;
+}
+.half-section-2 img {
+    height: 360px !important;;
+    max-height: 360px !important;;
+}
+.paragraph-header {
+    font-weight: bold;
+    margin-bottom: 10px
+}
+.half-section-sub-container {
+    height: 310px;
+    max-height: 310px;
+}
+.brown-button {
+    background: #cbbcad;
+    color:white;
+    border-radius: 0;
+    width: 110px;
+    height:50px;
+}
+.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
+.inquire-div {
+    position: absolute;
+    bottom: 0;
+}
+.inquire{
+    background-color: #ccbeae;
+    color: white;
+    border-radius: 0;
+}
+.feature-header {
+    height: 2.4em;
+    max-height: 2.4em;
+}
+.social-link {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #c4b2a1;
+    margin-right: 40px;
+}
+.social-img {
+    width: 20px; height: 20px;margin: 20px;
+}
+.hamayel-link {
+    font-size: 20px;
+    color:white;
+}

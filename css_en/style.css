@@ -1,0 +1,39 @@
+#familyMedia i, #familyActions i{
+    left: 2.8%;
+    right: unset;
+    margin-right: 8px;
+}
+.ontop-change {
+    left: 2%;
+    right: unset
+}
+.badge.user-home-badge {
+    right: unset;
+    left: 30px;
+}
+.modal .user-right-col {
+    text-align: left;
+}
+.modal .user-left-col {
+    text-align: right;
+}
+.accordion.my-accordion .card .card-header button:after {
+    float: right;
+}
+.profile-nav-item:not(:last-child) .profile-nav-link, .profile-nav-item:not(:last-child) .qa-nav-link{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.profile-nav-item:not(:first-child) .profile-nav-link, .profile-nav-item:not(:first-child) .qa-nav-link{
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+.profile-nav-item:not(:last-child) {
+    margin-right: 1px !important;
+}
+.hwi-button::after {
+    float: right;
+}
+.social:not(:last-of-type) {
+    margin-right: 5%;
+}

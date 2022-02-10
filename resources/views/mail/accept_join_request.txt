@@ -1,0 +1,6 @@
+Dear , <?=$user_name?>
+We are delighted to invite you to join our family tree,
+Please click on the below button to enter your information, then you can login and add your subtree ..
+open this link : <?=$faq_url?> to learn more.
+Regards.
+<?=$url?>

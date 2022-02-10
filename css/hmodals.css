@@ -1,0 +1,55 @@
+.modal-content {
+    border-radius: 2em;
+}
+.modal-header {
+    border-bottom-color: black;
+}
+
+.modal-footer .btn{
+    border-radius: 15px;
+}
+.modal .form-control {
+    background: #c7b5a3;
+    color:white;
+}
+.modal .form-control::placeholder{
+    color:white;
+}
+.modal .form-control:-ms-input-placeholder{
+    color:white;
+
+}
+.modal .form-control::-webkit-input-placeholder {
+    color:white;
+}
+.modal .form-control:not(.is-invalid):focus{
+    background: white;
+    color:black;
+    border-color: black;
+    box-shadow: none;
+}
+.modal .form-control.is-invalid:focus{
+    background: white;
+    color:black;
+    box-shadow: none;
+}
+
+.modal .form-control:focus::placeholder{
+    color:#bbb;
+}
+.hbtn {
+    color:white;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    font-weight: 600;
+}
+.btn-hred {
+    background: #cd1126;
+
+}
+.btn-hmuted {
+    background: #c7b5a3;
+}
+.modal {
+    direction: ltr !important;
+}

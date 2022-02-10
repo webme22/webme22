@@ -1,0 +1,3 @@
+Dear <?=$user_name?>, the following content was posted to Alhamayel's newsletter
+<?=$content?>
+Regards.

@@ -1,0 +1,5 @@
+Dear <?=$user_name?>,
+Thank you for upgrading/renewing your plan on alhamayel:
+Please note that since you used a bank transfer for upgrade/renew/topping up, you're account won't be affected until we confirm the transfer from our end
+You'll be notified once that happens
+Regards

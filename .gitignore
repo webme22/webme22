@@ -1,0 +1,11 @@
+.htaccess
+.idea
+.prettierrc.json
+uploads/*
+!uploads/.gitignore
+!videos/.gitignore
+env.php
+vendor
+testmail.php
+test.php
+terms-backup.php

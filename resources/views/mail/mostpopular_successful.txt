@@ -1,0 +1,4 @@
+Dear <?=$user_name?>,
+Thank you for subscribing to most popular families on alhamayel
+The change was successfully made to your profile.
+Regards.

@@ -1,0 +1,151 @@
+/* Admin responsive */
+@media (max-width: 991px) {
+    #wrapper.enlarged .content-page{
+        margin-left: 0px !important;
+    }
+    .navbar.navbar-default > .container > div{
+        margin-right: auto !important;
+    }
+}
+
+/* Components */
+.table-striped > tbody > tr:nth-of-type(odd),
+.table-hover > tbody > tr:hover,
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  text-align: right;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td,
+.table > thead > tr > th,
+.table-bordered {
+  text-align: right;
+}
+.table-rep-plugin tbody th {
+  text-align: right;
+}
+
+/* Core */
+body {
+    direction: rtl;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Droid Arabic Kufi";
+}
+.footer {
+    text-align: left !important;
+    left: 0px;
+    right: 240px;
+}
+.nav.nav-tabs > li > a,
+.nav.tabs-vertical > li > a {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Droid Arabic Kufi";
+}
+.topbar .topbar-left {
+    float: right;
+}
+.side-menu-sm + .content-page .footer {
+    left: 180px;
+}
+.navbar-right .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+}
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9 {
+    float: right;
+}
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+    float: right;
+}
+
+/* Custom */
+.pager .active a {
+    background-color: #448bf4;
+}
+.dropdown-menu > li > a {
+    float: right !important;
+}
+.dropdown-menu > li > a > img {
+    margin-left: 5px;
+}
+.dropdown-menu > li > a > i {
+    margin-left: 5px;
+}
+#cssmenu label .expand-item,
+.lg-sidebar label .expand-item {
+    margin-right: auto !important;
+}
+#cssmenu > ul > li a:after,
+.lg-sidebar > ul > li a:after,
+#cssmenu > ul > li label:after,
+.lg-sidebar > ul > li label:after {
+    right: 0;
+}
+#cssmenu ul li img,
+.lg-sidebar ul li img {
+    margin-left: 8px;
+}
+#cssmenu .has-sub > input:checked ~ ul,
+.lg-sidebar .has-sub > input:checked ~ ul {
+    padding-right: 16px;
+}
+#cssmenu .has-sub ul,
+.lg-sidebar .has-sub ul {
+    right: 0;
+}
+#cssmenu.align-right .has-sub ul {
+    right: auto;
+    left: 0;
+}
+#cssmenu .has-sub ul li a,
+.lg-sidebar .has-sub ul li a {
+    text-align: right;
+}
+
+/* Pages */
+.price-features {
+  text-align: right;
+}

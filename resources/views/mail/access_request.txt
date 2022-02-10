@@ -1,0 +1,4 @@
+Dear <?=$user_name?>,
+New Request to Access Your Family From :  <?=$name?> .
+Please login first on <?=$login_url?> , then you can find this request on your <?=$account_url?> page .
+Regards.

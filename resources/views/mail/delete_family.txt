@@ -1,0 +1,7 @@
+Dear <?=$user_name?>
+Click on the below button to delete your family tree ,your family information will be available to retrieve for a year , you can contact us during this year to retrieve it
+Note : Link is available for 2 days,
+
+<?=$url?>
+
+Regards.

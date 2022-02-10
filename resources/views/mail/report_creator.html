@@ -1,0 +1,29 @@
+<div style="background:#edf0f3;">
+    <div style="width:100%;text-align: center;">
+        <picture>
+            <source srcset="https://www.alhamayel.com/images/al-logo2.webp" type="image/webp">
+            <source srcset="https://www.alhamayel.com/images/al-logo2.png" type="image/png">
+            <img src="https://www.alhamayel.com/images/al-logo2.png" width="100" height="100">
+        </picture>
+    </div>
+    <div style="width:100%;text-align: center;">
+        <div style="display:inline-block;max-width: 512px;text-align:left;background: white; padding: 15px;">
+            Dear <?=$user_name?>,<br><br>
+            Today your family has, .<br><br>
+            <?=$report['access_requests'] ?> Access request <br>
+            <?=$report['join_requests'] ?> Join request <br>
+            <?=$report['invitations'] ?> Invitation <br>
+            <?=$report['media'] ?> Added Media <br>
+            <?=$report['added_members'] ?> members only <br>
+            <?=$report['added_assistants'] ?> Assistants only <br>
+            <?=$report['added_assistants_and_members'] ?> Assistants and Members <br><br>
+            Regards.
+        </div>
+    </div>
+    <div style="width:100%;text-align: center;">
+        <div style="display:inline-block;max-width: 512px;padding: 15px 0">
+            <hr>
+            <small>If you have any questions please feel free to contact us at <a href="mailto:support@alhamayel.com">support@alhamayel.com</a></small>
+        </div>
+    </div>
+</div>

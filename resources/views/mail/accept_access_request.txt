@@ -1,0 +1,5 @@
+Dear <?=$user_name?>.
+You can use this link to view family : <?=$familyName?> .
+View Family: <?=$url?>
+This Link Expires at : <?=$date?>
+Regards.

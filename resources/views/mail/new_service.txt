@@ -1,0 +1,7 @@
+Dear Admin ,
+New Additional Services Request From :  <?=$user_name?>
+Service Type: <?=$type?>
+His/Her Phone Number is : <?=$phone?>
+His/Her email Number is : <?=$email?>
+Got to Admin : <?=$admin_login?>
+Regards.

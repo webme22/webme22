@@ -1,0 +1,197 @@
+.stacked-cards {
+    position: relative;
+}
+.stacked-cards ul {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.stacked-cards li {
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px 0px #333;
+    list-style: none;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transition: 0.5s ease transform;
+}
+
+.stacked-cards li:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.stacked-cards li.active:after {
+    display: none;
+}
+.stacked-cards li img {
+    position: relative;
+    display: inline-block !important;
+    max-width: 100% !important;
+    height: 100px;
+    z-index: 4;
+    width: auto;
+    border-radius: 25px;
+}
+.stacked-cards li .simpleAudioPlayer{
+    max-height: 140px;
+}
+.stacked-prev {
+    color:black !important;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: -20px;
+    top: 45%;
+    cursor: pointer;
+}
+.stacked-next {
+    color:black !important;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: -20px;
+    top: 45%;
+    cursor: pointer;
+}
+.stacked-prev img {
+    width:100%;
+    height: 100%;
+}
+.stacked-next img {
+    transform: rotate(180deg);
+    width:100%;
+    height: 100%;
+}
+.stacked-cards .caption {
+    font-size: 10px;
+}
+.stacked-cards li.active {
+    cursor: default;
+    box-shadow: 0 5px 10px 0px #333;
+    transition: 0.5s ease transform;
+}
+.stacked-cards li audio {
+    height: 100px;
+}
+.stacked-cards li video {
+    height: 100px;
+    border-radius: 25px;
+}
+.stacked-cards .slider {
+    min-height: 140px;
+}
+@media (min-width: 576px) {
+    .stacked-cards li img {
+        height: 120px;
+    }
+    .stacked-cards li video {
+        height: 120px;
+    }
+    .stacked-cards li audio {
+        height: 120px;
+    }
+    .stacked-cards .slider {
+        min-height: 160px;
+    }
+    .stacked-cards li .simpleAudioPlayer{
+        max-height: 160px;
+    }
+}
+@media (min-width: 768px) {
+    .stacked-cards .caption {
+        font-size: 12px;
+    }
+    .stacked-cards li img {
+        height: 200px;
+    }
+    .stacked-cards li video {
+        height: 200px;
+    }
+    .stacked-cards li audio {
+        height: 200px;
+    }
+    .stacked-cards .slider {
+        min-height: 270px;
+    }
+    .stacked-cards li .simpleAudioPlayer{
+        max-height: 270px;
+    }
+    .stacked-prev {
+        width: 50px;
+        height:50px;
+        left: -40px;
+
+    }
+    .stacked-next {
+        width: 50px;
+        height:50px;
+        right: -40px;
+
+    }
+
+    }
+@media (min-width: 992px) {
+    .stacked-cards li img {
+        height: 150px;
+    }
+
+    .stacked-cards li audio {
+        height: 150px;
+    }
+    .stacked-cards li video {
+        height: 150px;
+    }
+    .stacked-cards .slider {
+        min-height: 190px;
+    }
+    .stacked-cards .caption {
+        font-size: 14px;
+    }
+    .stacked-cards li .simpleAudioPlayer{
+        max-height: 190px;
+    }
+}
+@media (min-width: 1200px) {
+    .stacked-cards li img {
+        height: 180px;
+    }
+    .stacked-cards li audio {
+        height: 180px;
+    }
+    .stacked-cards li video {
+        height: 180px;
+    }
+    .stacked-cards .slider {
+        min-height: 220px;
+    }
+    .stacked-cards li .simpleAudioPlayer{
+        max-height: 220px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .stacked-cards li img {
+        height: 260px;
+    }
+    .stacked-cards li audio {
+        height: 260px;
+    }
+    .stacked-cards li video {
+        height: 260px;
+    }
+    .stacked-cards .slider {
+        min-height: 300px;
+    }
+    .stacked-cards li .simpleAudioPlayer{
+        max-height: 300px;
+    }
+}
+

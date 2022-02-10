@@ -1,0 +1,4 @@
+Dear <?=$user_name?>
+Your Plan on alhamayel is expired:
+Please go to <?=$url?> to renew your plan.
+Regards.

@@ -1,0 +1,69 @@
+/* Feature */
+.inquire-div {
+    position: absolute;
+    bottom: 0;
+}
+.feature-header {
+    color: #1f2b36;
+    height: 2.4em;
+}
+.feature-text {
+    color: #707070;
+}
+.section.position-relative.alhamayel-features img {
+    width: 25%;
+    height: 100%;
+}
+.section.position-relative.alhamayel-features {
+    background: #1f2b36;
+}
+.section.position-relative.alhamayel-features h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.section.position-relative.alhamayel-features h2 {
+    color: #fff;
+    font-size: 30px;
+}
+.section.position-relative.alhamayel-features h5 {
+    color: #c7c7c7;
+    font-size: 18px;
+    font-weight: 400;
+    /* text-align: justify; */
+    /* word-break: break-all; */
+    /* word-spacing:-2px; */
+    text-justify: distribute;
+    margin-bottom: 50px;
+}
+.section.position-relative.alhamayel-features .inquire-div {
+    position: absolute;
+    bottom: 50px;
+    margin-left: -15px;
+}
+.section.position-relative.alhamayel-features .inquire-div button {
+    background: #fff;
+    color: #1f2b36;
+    width: 50%;
+    font-weight: 700;
+}
+.section.position-relative .alhamayel-additional-features h5 {
+    margin-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+    .section.position-relative.alhamayel-features h3 {
+        font-size: 16px;
+    }
+    .section.position-relative.alhamayel-features h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .section.position-relative.alhamayel-features h3 {
+        font-size: 15px;
+    }
+    .section.position-relative.alhamayel-features h5 {
+        font-size: 15px;
+    }
+}

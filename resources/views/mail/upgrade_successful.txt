@@ -1,0 +1,4 @@
+Dear <?=$user_name?>,
+Thank you for upgrading/renewing your plan on alhamayel
+Your plan was successfully upgraded/renewed to <?=$plan_name?>.
+Regards.
