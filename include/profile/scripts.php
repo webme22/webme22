@@ -214,7 +214,7 @@
                 // const url = URL.createObjectURL(blobData);
                 for (let i=0; i < sources.length; i++){
                     sources[i].src = audioObjectURL;
-                    sources[i].type = 'audio/mp3';
+                    sources[i].type = 'audio/mpeg';
                 }
             })
             .catch(console.error)
