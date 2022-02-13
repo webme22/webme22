@@ -218,7 +218,7 @@
                 }
             })
             .catch(console.error)
-        // console.log(myAudio)
+	 myAudio.load(); // Added for IOS devices By Sanu Khan 
         myAudio.play();
         // myAudio.addEventListener('ended', loopAudio, false);
     }
