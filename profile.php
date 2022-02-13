@@ -2355,7 +2355,10 @@ echo $familyId;
 				$row = Family::find($familyId);
 				echo "    <img src='".asset('images/audio-recording.png')."' width='80' height='80' id='speaker' family='{$familyId}'>";
 				?>
-                <audio controls id="family_pronunciation" class="hidden" src="<?= $row->pronunciation ?>" >
+<!--                 <audio controls id="family_pronunciation" class="hidden" src="<?= $row->pronunciation ?>" > -->
+		    <audio controls="controls" controls id="family_pronunciation" class="hidden">
+			    <source src="<?= $row->pronunciation ?>" type="audio/mpeg" />
+		    </audio>
             </h2>
             <p class="padding-left padding-right margin-bottom is-heading-color" style="color:#fff;text-align:center; font-size: 2vw !important; margin-top: -3% !important; margin-bottom: 4px !important;">
 				<?php echo $lang != 'ar' ? ucfirst($row['name_' . $lang]) . " " . $languages[$lang]['family'] : $languages[$lang]['family'] . " ". ucfirst(db_trans($row, 'name')); ?>
