@@ -202,8 +202,12 @@
 
     function init_audio(path) {
         // return false;
+	    alert();
         let myAudio = document.getElementById("family_pronunciation");
+	myAudio.load(); // Added for IOS devices By Sanu Khan 
+        myAudio.play();
         // fetch(myAudio.children[0].src)
+	    console.log(path,'path')
         fetch(path)
             .then(r => r.blob())
             .then(function(blobData){
@@ -218,8 +222,7 @@
                 }
             })
             .catch(console.error)
-	 myAudio.load(); // Added for IOS devices By Sanu Khan 
-        myAudio.play();
+	
         // myAudio.addEventListener('ended', loopAudio, false);
     }
 
