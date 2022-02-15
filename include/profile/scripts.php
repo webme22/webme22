@@ -202,28 +202,56 @@
 
     function init_audio(path) {
         // return false;
-	    alert();
-        let myAudio = document.getElementById("family_pronunciation");
-	myAudio.load(); // Added for IOS devices By Sanu Khan 
-        myAudio.play();
+//         let myAudio = document.getElementById("family_pronunciation");
+// 	myAudio.load(); // Added for IOS devices By Sanu Khan 
+//         myAudio.play();
         // fetch(myAudio.children[0].src)
-	    console.log(path,'path')
+// 	    console.log(path,'path')
+	    
+	   
+    function playAudio(src) {
+        if (!_snd)
+            _snd = new Audio();
+        else
+            $(_snd).empty();
+
+        for (var i = 0; i < src.length; i++) {
+            var source = document.createElement('source');
+            source.type = src[i].type;
+            source.src = src[i].src;
+            _snd.appendChild(source);
+        }
+
+        _snd.load(); // Needed on safari / idevice
+        _snd.play();
+    };
+
         fetch(path)
             .then(r => r.blob())
             .then(function(blobData){
-                let sources = myAudio.children;
-                // const audioArrayBuffer = blobData.arrayBuffer();
+//                 let sources = myAudio.children;
+//                 const audioArrayBuffer = blobData.arrayBuffer();
+//                 const url = URL.createObjectURL(blobData);
+// 		 for (let i=0; i < sources.length; i++){
+//                     sources[i].src = audioObjectURL;
+//                     sources[i].type = 'audio/mpeg';
+		   
+//                 }
+//         	myAudio.addEventListener('ended', loopAudio, false);
+		
+		//Added By Sanu - TEST Audio for IOS/ Chrome
+		
                 const audioBlob = new Blob([blobData], {type: 'audio/mpeg'});
                 const audioObjectURL = window.URL.createObjectURL(audioBlob);
-                // const url = URL.createObjectURL(blobData);
-                for (let i=0; i < sources.length; i++){
-                    sources[i].src = audioObjectURL;
-                    sources[i].type = 'audio/mpeg';
-                }
+		const myAudioTag = new Audio();
+		const source = document.createElement('source');
+		  sources[i].src = audioObjectURL;
+                  sources[i].type = 'audio/mpeg';
+		myAudioTag.appendChild(source).load().play();
+		
             })
             .catch(console.error)
 	
-        // myAudio.addEventListener('ended', loopAudio, false);
     }
 
     function loopAudio(path) {
@@ -235,7 +263,8 @@
     }
     $(document).ready(function () {
         $('body').on('click', '#speaker', function () {
-            let path = $('#family_pronunciation').children().attr('src');
+            let path = $(this).data('uri');
+//             let path = $('#family_pronunciation').children().attr('src');
             if (! path && path == '') {
                 Swal.fire({
                     title: "",
