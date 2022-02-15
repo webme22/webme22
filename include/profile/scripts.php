@@ -227,8 +227,8 @@
                 const audioObjectURL = window.URL.createObjectURL(audioBlob);
 		const myAudioTag = new Audio();
 		const source = document.createElement('source');
-		  sources[i].src = audioObjectURL;
-                  sources[i].type = 'audio/mpeg';
+		  source.src = audioObjectURL;
+                  source.type = 'audio/mpeg';
 		myAudioTag.appendChild(source).load().play();
 		
             })
