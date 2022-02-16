@@ -226,10 +226,12 @@
                 const audioBlob = new Blob([blobData], {type: 'audio/mpeg'});
                 const audioObjectURL = window.URL.createObjectURL(audioBlob);
 		const myAudioTag = new Audio();
+		myAudioTag.autoplay = true;
+		myAudioTag.muted = false;
 		const source = document.createElement('source');
 		  source.src = audioObjectURL;
                   source.type = 'audio/mpeg';
-		myAudioTag.appendChild(source).load().play();
+		myAudioTag.appendChild(source).load().play().pause();
 		
             })
             .catch(console.error)
