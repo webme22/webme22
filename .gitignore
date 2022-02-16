@@ -5,7 +5,7 @@ uploads/*
 !uploads/.gitignore
 !videos/.gitignore
 env.php
-vendor
+#vendor
 testmail.php
 test.php
 terms-backup.php
